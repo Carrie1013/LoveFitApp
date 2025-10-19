@@ -11,7 +11,7 @@ import SwiftUI
 struct LoveFitApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoveFitAppView()
         }
     }
 }
