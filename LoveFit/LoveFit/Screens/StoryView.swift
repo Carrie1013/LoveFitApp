@@ -17,12 +17,18 @@ struct StoryView: View {
     var body: some View {
         ZStack {
             // 1️⃣ 背景 CG
-            Image("riley")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .clipped()
-                .ignoresSafeArea(edges: [.top])
+            if let bg = manager.currentSegment.backgroundImage {
+                Image(bg)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .clipped()
+                    .ignoresSafeArea(edges: [.top])
+                    .transition(.opacity) // ✅ 切換時有淡入淡出效果
+                    .animation(.easeInOut(duration: 0.8), value: bg)
+            } else {
+                Color.black.ignoresSafeArea() // 沒圖片時顯示黑底
+            }
 
             // 2️⃣ 心跳波
             HeartWave(amplitude: CGFloat(mapHeartRateToAmplitude(hr.currentHeartRate)),

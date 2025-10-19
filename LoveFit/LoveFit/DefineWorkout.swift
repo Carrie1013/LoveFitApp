@@ -68,7 +68,7 @@ class StoryManager: ObservableObject {
         StorySegment(
             runTime: 0,
             title: "The Beginning",
-            text: "\"Great,\" Riley says. \"First clue is from an old poem: \n'Where the sundial's shadow points north, begin under the stone lion's gaze.' \nI know where the sundial is. This way!\"",
+            text: "\"Great,\" Riley says. \"We found the first hint!\"\n'First clue: Where the sundial's shadow points north, begin under the stone lion's gaze.'",
             options: nil,
             isHeartRateWarning: false,
             isChaseScene: false,
@@ -80,12 +80,12 @@ class StoryManager: ObservableObject {
         StorySegment(
             runTime: 1,
             title: "First Clue",
-            text: "'First clue: Where the sundial's shadow points north, begin under the stone lion's gaze.' I know where the sundial is. This way!",
+            text: "Riley says, \"I know where the sundial is. This way!\"",
             options: ["Go LEFT toward sundial", "Go RIGHT, shorter path"],
             isHeartRateWarning: false,
             isChaseScene: false,
             isFinale: false,
-            backgroundImage: "scene1"
+            backgroundImage: "scene2"
         ),
 
         StorySegment(
@@ -96,7 +96,7 @@ class StoryManager: ObservableObject {
             isHeartRateWarning: false,
             isChaseScene: false,
             isFinale: false,
-            backgroundImage: "scene1"
+            backgroundImage: "scene2"
         ),
 
         // 5-10 minutes
@@ -108,7 +108,7 @@ class StoryManager: ObservableObject {
             isHeartRateWarning: false,
             isChaseScene: false,
             isFinale: false,
-            backgroundImage: "scene1"
+            backgroundImage: "scene2"
         ),
         
         // Heart Rate Warning
@@ -120,7 +120,7 @@ class StoryManager: ObservableObject {
             isHeartRateWarning: true,
             isChaseScene: false,
             isFinale: false,
-            backgroundImage: "scene1"
+            backgroundImage: "scene3"
         ),
 
         StorySegment(
@@ -131,7 +131,7 @@ class StoryManager: ObservableObject {
             isHeartRateWarning: true,
             isChaseScene: false,
             isFinale: false,
-            backgroundImage: "scene1"
+            backgroundImage: "scene3"
         ),
         
         // Continue story...
