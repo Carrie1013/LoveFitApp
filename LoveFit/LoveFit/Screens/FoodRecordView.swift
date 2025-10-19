@@ -7,8 +7,8 @@ struct FoodRecordView: View {
             LFCard { Text("Today's Meal Score 85/100 💪 Balanced!") }
             ScrollView {
                 VStack(alignment:.leading, spacing:10){
-                    bubble("我午餐吃了雞胸肉飯", me: true)
-                    bubble("你的餐點約 500 卡、蛋白質 30g，很不錯喔 ❤️", me: false)
+                    bubble("I ate cheese burger this afternoon", me: true)
+                    bubble("Your meal contains about 800 kcal, Protein 30g, I'll record it for you!", me: false)
                 }
             }
             // HStack {
