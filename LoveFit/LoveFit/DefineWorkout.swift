@@ -199,7 +199,7 @@ class StoryManager: ObservableObject {
             isHeartRateWarning: false,
             isChaseScene: true,
             isFinale: false,
-            backgroundImage: "riley"
+            backgroundImage: "run"
         ),
         
         // Finale
