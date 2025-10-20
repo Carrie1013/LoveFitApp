@@ -143,7 +143,7 @@ class StoryManager: ObservableObject {
             isHeartRateWarning: false,
             isChaseScene: false,
             isFinale: false,
-            backgroundImage: "scene1"
+            backgroundImage: "riley"
         ),
 
         StorySegment(
@@ -154,7 +154,7 @@ class StoryManager: ObservableObject {
             isHeartRateWarning: false,
             isChaseScene: false,
             isFinale: false,
-            backgroundImage: "scene1"
+            backgroundImage: "riley"
         ),
 
         StorySegment(
@@ -165,7 +165,7 @@ class StoryManager: ObservableObject {
             isHeartRateWarning: false,
             isChaseScene: false,
             isFinale: false,
-            backgroundImage: "scene1"
+            backgroundImage: "riley"
         ),
 
         StorySegment(
@@ -176,7 +176,7 @@ class StoryManager: ObservableObject {
             isHeartRateWarning: false,
             isChaseScene: false,
             isFinale: false,
-            backgroundImage: "scene1"
+            backgroundImage: "riley"
         ),
 
         StorySegment(
@@ -187,7 +187,7 @@ class StoryManager: ObservableObject {
             isHeartRateWarning: false,
             isChaseScene: false,
             isFinale: false,
-            backgroundImage: "scene1"
+            backgroundImage: "riley"
         ),
         
         // Chase Scene
@@ -199,7 +199,7 @@ class StoryManager: ObservableObject {
             isHeartRateWarning: false,
             isChaseScene: true,
             isFinale: false,
-            backgroundImage: "scene1"
+            backgroundImage: "riley"
         ),
         
         // Finale
@@ -211,7 +211,7 @@ class StoryManager: ObservableObject {
             isHeartRateWarning: false,
             isChaseScene: false,
             isFinale: true,
-            backgroundImage: "scene1"
+            backgroundImage: "riley"
         )
     ]
     
