@@ -111,12 +111,6 @@ struct HeartWave: Shape {
     }
 }
 
-struct ChatMessage: Identifiable {
-    let id = UUID()
-    let text: String
-    let isUser: Bool
-}
-
 struct ChatBubble: View {
     let message: ChatMessage
     var body: some View {

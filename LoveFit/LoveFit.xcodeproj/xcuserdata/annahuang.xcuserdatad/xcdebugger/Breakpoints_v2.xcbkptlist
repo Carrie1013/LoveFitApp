@@ -18,36 +18,6 @@
             endingLineNumber = "40"
             landmarkName = "LFColor"
             landmarkType = "13">
-            <Locations>
-               <Location
-                  uuid = "64D76702-F63A-4DB6-887A-04D89812F743 - 784859e0cdabe4d9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "one-time initialization function for textSub"
-                  moduleName = "LoveFit.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/annahuang/Documents/LoveFitApp/LoveFit/LoveFit/DesignSystem.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41">
-               </Location>
-               <Location
-                  uuid = "64D76702-F63A-4DB6-887A-04D89812F743 - faa829b8eab35fd1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "LoveFit.LFColor.textSub.unsafeMutableAddressor : SwiftUI.Color"
-                  moduleName = "LoveFit.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/annahuang/Documents/LoveFitApp/LoveFit/LoveFit/DesignSystem.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
