@@ -7,7 +7,7 @@ struct LFPrimaryButton: View {
     var body: some View {
         Button(action: action) {
             Text(title).font(LFFont.body(17)).foregroundColor(.white)
-                .frame(maxWidth: .infinity, minHeight: 52)
+                .frame(maxWidth: 150, minHeight: 52)
                 .background(
                     LinearGradient(colors: [LFColor.primary, LFColor.primaryDark],
                                    startPoint: .topLeading, endPoint: .bottomTrailing)
@@ -108,5 +108,28 @@ struct HeartWave: Shape {
             amplitude = newValue.first
             phase = newValue.second
         }
+    }
+}
+
+struct ChatMessage: Identifiable {
+    let id = UUID()
+    let text: String
+    let isUser: Bool
+}
+
+struct ChatBubble: View {
+    let message: ChatMessage
+    var body: some View {
+        HStack {
+            if message.isUser { Spacer() }
+            Text(message.text)
+                .padding(12)
+                .foregroundColor(message.isUser ? .white : LFColor.textMain)
+                .background(message.isUser ? LFColor.mainGradientEnd : Color.white)
+                .cornerRadius(16)
+                .shadow(radius: 1)
+            if !message.isUser { Spacer() }
+        }
+        .padding(.horizontal)
     }
 }

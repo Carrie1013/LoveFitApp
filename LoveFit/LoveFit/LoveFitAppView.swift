@@ -34,7 +34,7 @@ struct LoveFitAppView: View {
         switch tab {
         case 0: DashboardView()
         case 1: StoryView()
-        case 2: WorkoutView()
+        case 2: VoiceChatView()
         case 3: FoodRecordView()
         default: ProfileCGView()
         }

@@ -81,7 +81,7 @@ class StoryManager: ObservableObject {
             runTime: 1,
             title: "First Clue",
             text: "Riley says, \"I know where the sundial is. This way!\"",
-            options: ["Go LEFT toward sundial", "Go RIGHT, shorter path"],
+            options: ["Go LEFT, toward sundial", "Go RIGHT, shorter path"],
             isHeartRateWarning: false,
             isChaseScene: false,
             isFinale: false,

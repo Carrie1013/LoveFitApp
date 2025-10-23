@@ -19,13 +19,56 @@ extension Color {
 enum LFColor {
     static let primary        = Color(hex: "#FF5C70")
     static let primaryDark    = Color(hex: "#FF2F5B")
-    static let bg             = Color(hex: "#FFF9FA")
+    static let bg             = Color(hex: "#FFF58F")
     static let surface        = Color(hex: "#FFE3E8")
     static let border         = Color(hex: "#BFBFC2")
     static let textMain       = Color(hex: "#2C2C2C")
     static let textAccent     = Color(hex: "#FF7B8E")
     static let highlight      = Color(hex: "#FFB84C")
+    
+    // 🌸 Brand gradients
+    static let mainGradientStart = Color(hex: "#FFB088")
+    static let mainGradientEnd   = Color(hex: "#FF9A9E")
+
+    static let yellowGradientStart = Color(hex: "#FFC76D")
+    static let yellowGradientEnd   = Color(hex: "#FFEAA7")
+
+    // 🌷 Background gradient
+    static let bgTop    = Color(hex: "#FFFBF0")
+    static let bgBottom = Color(hex: "#FFF5F8")
+
+    // 🖋️ Text colors
+//    static let textMain = Color(hex: "#5D5569")
+//    static let textSub  = Color(hex: "#9B8FA6")
+
+    // 🧱 Neutral & border
+//    static let border = Color(hex: "#BFBFC2")
+
+    // 🧁 Legacy fallback / compatibility
+//    static let surface = Color(hex: "#FFE3E8")
 }
+
+extension LFColor {
+    static var backgroundGradient: LinearGradient {
+        LinearGradient(colors: [bgTop, bgBottom],
+                       startPoint: .top,
+                       endPoint: .bottom)
+    }
+
+    static var mainGradient: LinearGradient {
+        LinearGradient(colors: [mainGradientStart, mainGradientEnd],
+                       startPoint: .leading,
+                       endPoint: .trailing)
+    }
+
+    static var yellowGradient: LinearGradient {
+        LinearGradient(colors: [yellowGradientStart, yellowGradientEnd],
+                       startPoint: .leading,
+                       endPoint: .trailing)
+    }
+}
+
+
 
 enum LFFont {
     static func title(_ size: CGFloat) -> Font { .system(size: size, weight: .bold, design: .serif) }
